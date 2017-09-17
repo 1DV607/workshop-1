@@ -1,0 +1,18 @@
+Author: 	Caroline Nilsson (cn222nd)
+			Daniel Alm Grundström (dg222dw)
+
+After getting feedback from other students we decided to remove the Municipality and Berth-Assignment classes and add a Record class containing the attributes "boat registration" and "berth history". Along with removing the Membership class, this was done to increase clarity and simplicity to the domain model. We also added a 1 to 1 association between boat and berth, since it was pointed out that it was not clear that one boat has one berth. 
+
+Change Log:
+• Add 1 to 1 connection Boat - Berth
+• Remove Municipality + Berth-Assignment
+• Add Records (Attributes: Boat registration, berth history)
+• Remove Membership class
+
+
+We got feedback to add a Calendar class but since we think that a Calendar (in this case) would only be a collection of Events, it's unnecessary for the clarification of the model. we also got suggestions to add username and password as attributes to Member and Secretary classes, in this case we felt that the authentication of roles is not relevant to show in the domain model. The Fee class was also requested to be removed which we decided not to do because the membership fee is a part of the requirements. 
+We also got feedback on the notations being wrong, that we should use camelCase for attributes, capital letters for associations and not to use colors for the classes. However, we think that it's more important that that the model is easy to read and consistent along with using the correct UML notations than following strict rules. Another notations feedback we got was to use line arrows instead of reading direction arrows but this feedback asks us to use incorrect UML notations and therefor we ignored this.
+We got feedback from one person who said that the model isn't a domain model and that our concepts are not conceptual classes along with that we should only use 4-6 classes. However, the reviewer had no explanations or references to why the model was wrong so we decided to ignore this review completely.   
+
+
+
